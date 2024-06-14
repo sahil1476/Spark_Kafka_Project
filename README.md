@@ -68,7 +68,9 @@ Retention in Kafka refers to how long Kafka retains records in a topic before th
 
 ## How to START THE KAFKA ENVIRONMENT
    - You need to set up Kafka [For additional Details see here](https://kafka.apache.org/documentation/)
-Kafka with ZooKeeper
+
+### Kafka with ZooKeeper
+
 Run the following commands in order to start all services in the correct order:
 
 ### Start the ZooKeeper service
@@ -79,10 +81,12 @@ Open another terminal session and run:
 ```$ bin/kafka-server-start.sh config/server.properties```
 Once all services have successfully launched, you will have a basic Kafka environment running and ready to use.
 
-Kafka with KRaft
+### Kafka with KRaft
+
 Kafka can be run using KRaft mode using local scripts and downloaded files or the docker image. Follow one of the sections below but not both to start the kafka server.
 
-Using downloaded files
+#### Using downloaded files
+
 Generate a Cluster UUID
 
 ```$ KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"```
@@ -91,8 +95,9 @@ Format Log Directories
 ```$ bin/kafka-storage.sh format -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties```
 Start the Kafka Server
 
+### Using docker image
+
 ```$ bin/kafka-server-start.sh config/kraft/server.properties```
-Using docker image
 Get the docker image
 
 ```$ docker pull apache/kafka:3.7.0```
@@ -101,7 +106,7 @@ Start the kafka docker container
 ```$ docker run -p 9092:9092 apache/kafka:3.7.0```
 Once the Kafka server has successfully launched, you will have a basic Kafka environment running and ready to use.
 
-### CREATE A TOPIC TO STORE YOUR EVENTS
+## CREATE A TOPIC TO STORE YOUR EVENTS
 ```
 $ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 ```
@@ -111,14 +116,14 @@ All of Kafka's command line tools have additional options: run the kafka-topics.
 Topic: quickstart-events        TopicId: NPmZHyhbR9y00wMglMH2sg PartitionCount: 1       ReplicationFactor: 1	Configs:
     Topic: quickstart-events Partition: 0    Leader: 0   Replicas: 0 Isr: 0
  ```
-### WRITE SOME EVENTS INTO THE TOPIC
+## WRITE SOME EVENTS INTO THE TOPIC
 ```$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 This is my first event
 This is my second event
 ```
 You can stop the producer client with Ctrl-C at any time.
 
-### READ THE EVENTS
+## READ THE EVENTS
 ```
 $ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 This is my first event
