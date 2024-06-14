@@ -17,13 +17,13 @@ A topic is a category or feed name to which records are published. Kafka topics 
 2. `Partition`
 Topics in Kafka are split into partitions. Each partition is an ordered, immutable sequence of records that is continually appended to—a structured commit log. Partitions allow Kafka to scale horizontally by distributing data across multiple brokers.
 
-3.`Broker`
+3. `Broker`
 A Kafka broker is a server that stores data and serves clients. Each broker hosts one or more partitions and is responsible for handling the read and write requests for the partitions it hosts, as well as for replicating data to other brokers.
 
 4. `Producer`
 A producer is a client application that publishes (writes) records to Kafka topics. Producers send data to Kafka brokers, which store the data in the appropriate topic partitions.
 
-5.`Consumer`
+5. `Consumer`
 A consumer is a client application that subscribes to (reads) records from one or more Kafka topics. Consumers are part of a consumer group, and each consumer in the group processes data from different partitions to achieve parallel processing.
 
 6. `Consumer Group`
