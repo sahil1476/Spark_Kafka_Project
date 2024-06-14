@@ -55,7 +55,8 @@ Retention in Kafka refers to how long Kafka retains records in a topic before th
 1. To publish (write) and subscribe to (read) streams of events, including continuous
    import/export of your data from other systems.
 2. To store streams of events durably and reliably for as long as you want.
-3. To process streams of events as they occur or retrospectively.```
+3. To process streams of events as they occur or retrospectively.
+```
 
 
 
@@ -78,18 +79,56 @@ Kafka can be run using KRaft mode using local scripts and downloaded files or th
 Using downloaded files
 Generate a Cluster UUID
 
-$ KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+```$ KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"```
 Format Log Directories
 
-$ bin/kafka-storage.sh format -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties
+```$ bin/kafka-storage.sh format -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties```
 Start the Kafka Server
 
-$ bin/kafka-server-start.sh config/kraft/server.properties
+```$ bin/kafka-server-start.sh config/kraft/server.properties```
 Using docker image
 Get the docker image
 
-$ docker pull apache/kafka:3.7.0
+```$ docker pull apache/kafka:3.7.0```
 Start the kafka docker container
 
-$ docker run -p 9092:9092 apache/kafka:3.7.0
+```$ docker run -p 9092:9092 apache/kafka:3.7.0```
 Once the Kafka server has successfully launched, you will have a basic Kafka environment running and ready to use.
+
+### CREATE A TOPIC TO STORE YOUR EVENTS
+```
+$ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+```
+All of Kafka's command line tools have additional options: run the kafka-topics.sh command without any arguments to display usage information. For example, it can also show you details such as the partition count of the new topic:
+
+```$ bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
+Topic: quickstart-events        TopicId: NPmZHyhbR9y00wMglMH2sg PartitionCount: 1       ReplicationFactor: 1	Configs:
+    Topic: quickstart-events Partition: 0    Leader: 0   Replicas: 0 Isr: 0
+ ```
+### WRITE SOME EVENTS INTO THE TOPIC
+```$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+This is my first event
+This is my second event
+```
+You can stop the producer client with Ctrl-C at any time.
+
+### READ THE EVENTS
+```
+$ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+This is my first event
+This is my second event
+```
+##### This is all you need to work with the project
+
+Now install `Spark`. 
+### Apache Spark 
+   an open-source, distributed computing system designed for fast and general-purpose cluster computing. It extends the MapReduce model to efficiently support more types of computations, 
+   including interactive queries and stream processing.
+#### Languages Supported by Apache Spark 
+      Scala
+      Java
+      Python - Pyspark ( we are using this )
+
+Go and check the code now at ( ).
+
+
