@@ -1,5 +1,5 @@
 ![image](https://github.com/sahil1476/Spark_Kafka_Project/assets/94641122/7ef660d9-5352-4a1f-81e2-4691c5e75ad8)
-
+<img src="https://github.com/sahil1476/Spark_Kafka_Project/assets/94641122/7ef660d9-5352-4a1f-81e2-4691c5e75ad8" alt="Sample Image" width="300" height="200">
 ## Set Up Kafka `Topic` in which you are going to send and read data from `Spark`
 ### Thing you need to Know 
 1. Apache Kafka - public - subscribe messaging system
