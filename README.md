@@ -140,15 +140,17 @@ Now install `Spark`.
       Java
       Python - Pyspark ( we are using this )
 
-##### This is a button that opens the Apache Spark PySpark documentation:
+##### You can check Apache Spark PySpark documentation:
 
 <a href="https://spark.apache.org/docs/latest/api/python/getting_started/index.html" target="_blank">
   <button>Go to PySpark Documentation</button>
 </a>
-<button style="background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;" onmouseover="this.style.backgroundColor='#45a049'" onmouseout="this.style.backgroundColor='#4CAF50'">sahil</button>
+
 
 Go and check the code now at [check here](https://github.com/sahil1476/Spark_Kafka_Project/tree/main/taskimp ).
 
+
+<img src="https://github.com/sahil1476/Spark_Kafka_Project/assets/94641122/92ca9475-d357-4e0a-b8c8-7f7672b01971" alt="Sample Image" width="100%">
 
 
 
