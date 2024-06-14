@@ -149,4 +149,31 @@ This is a button that opens the Apache Spark PySpark documentation:
 
 Go and check the code now at [check here](https://github.com/sahil1476/Spark_Kafka_Project/tree/main/taskimp ).
 
+# My Document
+
+This is a button that opens the Apache Spark PySpark documentation:
+
+<a href="https://spark.apache.org/docs/latest/api/python/getting_started/index.html" target="_blank">
+  <button class="styled-button">Go to PySpark Documentation</button>
+</a>
+
+<style>
+  .styled-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+  .styled-button:hover {
+    background-color: #45a049;
+  }
+</style>
 
