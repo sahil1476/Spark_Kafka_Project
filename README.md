@@ -150,7 +150,7 @@ Now install `Spark`.
 Go and check the code now at [check here](https://github.com/sahil1476/Spark_Kafka_Project/tree/main/taskimp ).
 
 
-<img src="https://github.com/sahil1476/Spark_Kafka_Project/assets/94641122/92ca9475-d357-4e0a-b8c8-7f7672b01971" alt="Sample Image" width="100%">
+<img src="https://github.com/sahil1476/Spark_Kafka_Project/assets/94641122/92ca9475-d357-4e0a-b8c8-7f7672b01971" alt="Sample Image" height="200" width="100%">
 
 
 
