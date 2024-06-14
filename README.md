@@ -3,7 +3,9 @@
 ### Thing you need to Know 
 1. Apache Kafka - public - subscribe messaging system
    kafka is Distributed Streaming Platform or Commint log,  used for building real-time data pipelines and streaming applications.
-   #### Some basic terms to understand Kafka:
+  
+#### Some basic terms to understand Kafka:
+
 1. `Topic`
 A topic is a category or feed name to which records are published. Kafka topics are always multi-subscriber; a topic can have zero, one, or many consumers that subscribe to the data written to it.
 
