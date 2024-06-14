@@ -61,7 +61,7 @@ Retention in Kafka refers to how long Kafka retains records in a topic before th
 
 
 ## How to START THE KAFKA ENVIRONMENT
-   - You need to set up Kafka [](https://kafka.apache.org/documentation/)
+   - You need to set up Kafka [For additional Details see here](https://kafka.apache.org/documentation/)
 Kafka with ZooKeeper
 Run the following commands in order to start all services in the correct order:
 
@@ -129,6 +129,6 @@ Now install `Spark`.
       Java
       Python - Pyspark ( we are using this )
 
-Go and check the code now at ( ).
+Go and check the code now at [check here](https://github.com/sahil1476/Spark_Kafka_Project/tree/main/taskimp ).
 
 
