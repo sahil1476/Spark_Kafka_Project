@@ -1,7 +1,11 @@
 <img src="https://github.com/sahil1476/Spark_Kafka_Project/assets/94641122/7ef660d9-5352-4a1f-81e2-4691c5e75ad8" alt="Sample Image" width="100%" height="400">
+
 ## Set Up Kafka `Topic` in which you are going to send and read data from `Spark`
+
 ## Thing you need to Know 
+
 # Apache Kafka
+
 Apache Kafka - public - subscribe messaging system
    kafka is Distributed Streaming Platform or Commint log,  used for building real-time data pipelines and streaming applications.
   
